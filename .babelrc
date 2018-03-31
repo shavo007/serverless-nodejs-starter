@@ -3,5 +3,10 @@
   "presets": [
     ["env", { "node": "6.10" }],
     "stage-3"
-  ]
+],
+"env": {
+  "test": {
+    "plugins": ["istanbul"]
+  }
+}
 }

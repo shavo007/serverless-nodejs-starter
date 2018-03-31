@@ -4,3 +4,9 @@ jspm_packages
 
 # Serverless directories
 .serverless
+
+.webpack
+*.clinic-doctor
+*.clinic-doctor.html
+
+yarn-error.log

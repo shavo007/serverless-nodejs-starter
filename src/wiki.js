@@ -1,22 +1,21 @@
 // wiki.js - Wiki route module.
-import express from 'express'
+import express from 'express';
 
 const router = express.Router();
 
 // Home page route.
-router.get('/', function (req, res) {
+router.get('/', (req, res) => {
   res.send('Wiki home page');
-})
+});
 
 // About page route.
-router.get('/about', function (req, res) {
+router.get('/about', (req, res) => {
   res.send('About this wiki');
-})
+});
 
 router.post('/', (req, res) => {
-    console.log(`body is ${req.body}`);
-    res.status(201).json({status: 'created'})
-
-})
+  console.log(`body is ${req.body}`);
+  res.status(201).json({ status: 'created' });
+});
 
 export default router;
