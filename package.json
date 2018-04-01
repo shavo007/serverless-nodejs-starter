@@ -11,7 +11,7 @@
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "bootstrap": "./scripts/bootstrap.sh",
     "deploy:env": "sls deploy --stage $NODE_ENV",
-    "deploy": "export NODE_ENV=dev && yarn deploy:env",
+    "deploy": "export NODE_ENV=dev && sls deploy --stage $NODE_ENV",
     "deploy:production": "export NODE_ENV=production && yarn deploy:env",
     "deploy:stage": "export NODE_ENV=stage && yarn deploy:env",
     "lint": "eslint ./src",
@@ -24,42 +24,41 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "yarn lint -- --fix",
+      "yarn lint  --fix",
       "prettier --write --single-quote --trailing-comma es5",
       "git add"
     ]
   },
   "nyc": {
-  "check-coverage": true,
-  "lines": 0,
-  "statements": 0,
-  "functions": 0,
-  "branches": 0,
-  "sourceMap": false,
-  "instrument": false,
-  "require": [
-    "babel-register"
-  ],
-  "include": [
-    "src/**/*.js"
-  ],
-  "exclude": [
-    "src/**/*.spec.js",
-    "src/**/index.js",
-    "src/logger.js"
-  ],
-  "reporter": [
-    "text",
-    "html",
-    "teamcity"
-  ],
-  "cache": true,
-  "all": true,
-  "report-dir": "./reports/coverage"
-},
+    "check-coverage": true,
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0,
+    "sourceMap": false,
+    "instrument": false,
+    "require": [
+      "babel-register"
+    ],
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/**/*.spec.js",
+      "src/**/index.js",
+      "src/logger.js"
+    ],
+    "reporter": [
+      "text",
+      "html",
+      "teamcity"
+    ],
+    "cache": true,
+    "all": true,
+    "report-dir": "./reports/coverage"
+  },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "serverless-http": "^1.5.5",
     "source-map-support": "^0.5.4"

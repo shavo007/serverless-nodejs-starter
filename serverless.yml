@@ -7,6 +7,7 @@ plugins:
   - serverless-webpack # Use serverless-webpack plugin to transpile ES6/ES7
   - serverless-offline
   - serverless-domain-manager
+  - serverless-plugin-aws-alerts
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -29,6 +30,33 @@ custom:
     package:
         individually: true #Webpack compiles and optimizes each function individually,
         # removing unnecessary imports and reducing code sizes significantly
+
+  alerts:
+    stages:
+      - dev
+    topics:
+      alarm:
+        topic: ${self:service}-${opt:stage}-alerts-alarm
+        notifications:
+          - protocol: email
+            endpoint: shanelee007@gmail.com # Change this to your email address
+    definitions:  # these defaults are merged with your definitions
+      # functionErrors:
+        # period: 300 # override period
+      customAlarm:
+        description: 'My custom alarm'
+        namespace: 'AWS/Lambda'
+        metric: exceptions
+        threshold: 0
+        statistic: Minimum
+        period: 60
+        evaluationPeriods: 1
+        comparisonOperator: GreaterThanThreshold
+        pattern: 'exception Bar'
+    alarms:
+      - functionErrors
+      - functionThrottles
+      - customAlarm
 
 provider:
   name: aws

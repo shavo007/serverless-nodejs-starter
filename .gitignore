@@ -6,6 +6,8 @@ jspm_packages
 .serverless
 
 .webpack
+.nyc_output
+reports
 *.clinic-doctor
 *.clinic-doctor.html
 

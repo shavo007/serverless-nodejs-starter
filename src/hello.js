@@ -1,3 +1,5 @@
+import HelloWorld from './helloWorld';
+
 const message = ({ time, ...rest }) =>
   new Promise(resolve =>
     setTimeout(() => {
@@ -6,10 +8,14 @@ const message = ({ time, ...rest }) =>
   );
 
 const hello = async (event, context, callback) => {
+  const helloWorld = new HelloWorld('world');
+
+  console.error(`exception Bar`);
+
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: `Go Serverless v1.0! ${await message({
+      message: ` ${helloWorld.hello()} ${await message({
         time: 1,
         copy: 'Your function executed successfully!',
       })}`,
