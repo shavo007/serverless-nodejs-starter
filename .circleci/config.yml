@@ -35,3 +35,9 @@ jobs:
 
       # run tests!
       - run: yarn test
+      - run:
+          name: code-coverage
+          command: 'yarn coverage'
+      - store_artifacts:
+          path: reports/coverage
+          prefix: coverage
