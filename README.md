@@ -5,7 +5,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/shavo007/serverless-nodejs-starter/badge.svg?branch=master)](https://coveralls.io/github/shavo007/serverless-nodejs-starter?branch=master)
 
 
-![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)
 
 A Node.js starter for the Serverless Framework with webpack, custom domain and unit test support
 
