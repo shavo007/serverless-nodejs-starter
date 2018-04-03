@@ -1,4 +1,5 @@
 import HelloWorld from './helloWorld';
+import logger from './logger';
 
 const message = ({ time, ...rest }) =>
   new Promise(resolve =>
@@ -10,7 +11,7 @@ const message = ({ time, ...rest }) =>
 const hello = async (event, context, callback) => {
   const helloWorld = new HelloWorld('world');
 
-  console.error(`exception Bar`);
+  logger.error(`exception Bar`);
 
   const response = {
     statusCode: 200,

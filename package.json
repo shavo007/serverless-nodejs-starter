@@ -9,16 +9,16 @@
   "private": true,
   "scripts": {
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "bootstrap": "./scripts/bootstrap.sh",
-    "deploy:env": "sls deploy --stage $NODE_ENV",
-    "deploy": "export NODE_ENV=dev && sls deploy --stage $NODE_ENV",
-    "deploy:production": "export NODE_ENV=production && yarn deploy:env",
-    "deploy:stage": "export NODE_ENV=stage && yarn deploy:env",
+    "deploy:dev": "sls deploy --stage dev",
+    "deploy:production": "sls deploy --stage production",
+    "deploy:stage": "sls deploy --stage stage",
     "lint": "eslint ./src",
     "precommit": "lint-staged",
-    "serve": "serverless offline start",
-    "tail:hello": "serverless logs --function hello --tail",
-    "test": "eslint --fix src && rimraf reports && cross-env NODE_ENV=test nyc mocha",
+    "serve": "cross-env SLS_DEBUG=* serverless offline start --stage dev",
+    "metrics": "sls metrics --stage dev",
+    "tail:hello": "sls logs --function hello --tail",
+    "tail:app": "sls logs --function app --tail",
+    "test:unit": "eslint --fix src && rimraf reports && cross-env NODE_ENV=test nyc mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "watch:hello": "serverless invoke local --watch --function hello --path fixtures/event.json",
     "watch:warm": "serverless invoke local --watch --function hello --path fixtures/scheduled.json"
@@ -62,7 +62,8 @@
     "babel-runtime": "6.26.0",
     "express": "4.16.3",
     "serverless-http": "1.5.5",
-    "source-map-support": "0.5.4"
+    "source-map-support": "0.5.4",
+    "winston": "^2.4.1"
   },
   "devDependencies": {
     "aws-sdk": "2.219.1",

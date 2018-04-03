@@ -1,5 +1,6 @@
 // wiki.js - Wiki route module.
 import express from 'express';
+import logger from './logger';
 
 const router = express.Router();
 
@@ -10,6 +11,7 @@ router.get('/', (req, res) => {
 
 // About page route.
 router.get('/about', (req, res) => {
+  logger.info(`about...`);
   res.send('About this wiki');
 });
 
