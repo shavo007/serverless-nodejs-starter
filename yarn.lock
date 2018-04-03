@@ -5909,9 +5909,9 @@ serverless-http@1.5.5:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.5.5.tgz#bddbfcae301389e48b4bce4ba340cb4e58a2c849"
 
-serverless-offline@3.18.0:
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.18.0.tgz#d07596f3474da7e43733e56d1325d051061bb798"
+serverless-offline@3.20.0:
+  version "3.20.0"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.20.0.tgz#efb0a8692cb88c1a0ae84c6538db6970d589f49b"
   dependencies:
     babel-register "^6.18.0"
     boom "^4.2.0"
