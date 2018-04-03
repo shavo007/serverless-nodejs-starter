@@ -63,7 +63,7 @@
     "express": "4.16.3",
     "serverless-http": "1.5.5",
     "source-map-support": "0.5.4",
-    "winston": "^2.4.1"
+    "winston": "2.4.1"
   },
   "devDependencies": {
     "aws-sdk": "2.219.1",
