@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "bootstrap": "./scripts/bootstrap.sh",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "deploy:dev": "sls deploy --stage dev",
     "deploy:production": "sls deploy --stage production",
