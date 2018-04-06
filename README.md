@@ -14,9 +14,9 @@ Once installed, you can create and deploy functions with the latest ES6 features
   - Use async/await
   - And much more!
 - **Run API Gateway locally**
-  - Use `serverless offline start`
+  - Use `yarn serve`
 - **Support for unit tests**
-  - Run `yarn test` to run your tests
+  - Run `yarn test:unit` to run your tests
 - **Sourcemaps for proper error messages**
   - Error message show the correct line numbers
   - Works in production with CloudWatch
@@ -65,10 +65,55 @@ functions:
 
 we're setting up a function named `hello` with a handler at `src/hello.js` (the `.default` piece is just indicating that the function to run will be the default export from that file). The `http` event says that this function will run when an http event is triggered (on AWS, this happens via API Gateway).
 
-#### 2. Create your function
+#### 2.a Create your vanilla function
 
 This starter kit's Hello World function (which you will of course get rid of) can be found at [`./src/hello.js`](./src/hello.js). There you can see a basic function that's intended to work in conjunction with API Gateway (i.e., it is web-accessible). Like most Serverless functions, the `hello` function accepts an event, context, and callback. When your function is completed, you execute the callback with your response. (This is all basic Serverless; if you've never used it, be sure to read through [their docs](https://serverless.com/framework/docs/).
 
+#### 2.b Express wrapper function
+
+On the other hand if you want to use express and proxy through api gateway have a look at [`./src/index.js`](./src/index.js)
+
+For more info check out the tutorial at serverless and how it can help with cold starts [serverless blog](https://serverless.com/blog/serverless-express-rest-api/)
+
+
+#### 3. Create your custom domain
+
+```yaml
+customDomain:
+    domainName: shane.shanelee.xyz
+    certificateName: '*.shanelee.xyz'
+    basePath: ''
+    stage: ${self:provider.stage}
+    createRoute53Record: true
+    endpointType: 'regional'
+
+```
+
+To create the custom domain
+
+**Make sure and change the values to suit your needs**
+
+`sls create_domain`
+
+### Custom alerts
+
+> A Serverless plugin to easily add CloudWatch alarms to functions
+
+```yaml
+alerts:
+  stages:
+    - dev
+  topics:
+    alarm:
+      topic: ${self:service}-${opt:stage}-alerts-alarm
+      notifications:
+        - protocol: email
+          endpoint: shanelee007@gmail.com # Change this to your email address
+```
+
+This creates an SNS topic and triggers based on certain cloudwatch metrics and sends via email.
+
+For more info check out [their docs](https://www.npmjs.com/package/serverless-plugin-aws-alerts)
 
 ### API Gateway-like local dev server
 
@@ -94,6 +139,14 @@ functions:
 As you can see, the path to the file with the function has to explicitly say where the handler
 file is. (If your function weren't the default export of that file, you'd do something like:
 `src/hello.namedExport` instead.)
+
+### Renovate
+
+> Automated Dependency Updates
+
+Renovate runs continuously to detect the latest available versions. And automagicaly creates PR on your github project with changelog and release notes.
+
+For more info and how to authorise the github app check out [onboarding guide](https://renovateapp.com/docs/getting-started/configure-renovate)
 
 ## Deploy
 
