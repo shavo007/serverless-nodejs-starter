@@ -93,7 +93,7 @@ To create the custom domain
 
 **Make sure and change the values to suit your needs**
 
-`sls create_domain`
+`sls create_domain --stage dev`
 
 ### Custom alerts
 
