@@ -70,7 +70,7 @@
     "aws-sdk": "2.222.1",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
-    "babel-plugin-istanbul": "4.1.5",
+    "babel-plugin-istanbul": "4.1.6",
     "babel-plugin-source-map-support": "2.0.1",
     "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-env": "1.6.1",
