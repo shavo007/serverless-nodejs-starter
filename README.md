@@ -8,6 +8,8 @@ A Node.js starter for the Serverless Framework with webpack, custom domain and u
 
 Once installed, you can create and deploy functions with the latest ES6 features in minutes, with linting and formatting baked in.
 
+[![asciicast](https://asciinema.org/a/cuU1ADQApvbGbYN3VPJIsfJs0.png)](https://asciinema.org/a/cuU1ADQApvbGbYN3VPJIsfJs0?speed=3)
+
 [Serverless Node.js Starter](https://github.com/shavo007/serverless-nodejs-starter) uses the [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin, [Babel](https://babeljs.io), and [Mocha](https://mochajs.org/). It supports:
 
 - **ES7 syntax in your handler functions**
@@ -23,6 +25,8 @@ Once installed, you can create and deploy functions with the latest ES6 features
 - **Automatic support for multiple handler files**
   - No need to add a new entry to your `webpack.config.js`
 - **Add environment variables for your stages**
+
+
 
 ## Install
 
