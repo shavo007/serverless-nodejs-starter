@@ -1,102 +1,105 @@
 {
-  "name": "serverless-nodejs-starter",
-  "version": "1.0.0",
-  "description": "starter for nodejs serverless",
-  "main": "index.js",
-  "repository": "https://github.com/shavo007/serverless-nodejs-starter.git",
-  "author": "shane lee <shanelee007@gmail.com>",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "bootstrap": "./scripts/bootstrap.sh",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "deploy:dev": "sls deploy --stage dev",
-    "deploy:production": "sls deploy --stage production",
-    "deploy:stage": "sls deploy --stage stage",
-    "lint": "eslint ./src",
-    "precommit": "lint-staged",
-    "serve": "cross-env SLS_DEBUG=* serverless offline start --stage dev",
-    "metrics": "sls metrics --stage dev",
-    "tail:hello": "sls logs --function hello --tail",
-    "tail:app": "sls logs --function app --tail",
-    "test:unit": "eslint --fix src && rimraf reports && cross-env NODE_ENV=test nyc mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "watch:hello": "serverless invoke local --watch --function hello --path fixtures/event.json",
-    "watch:warm": "serverless invoke local --watch --function hello --path fixtures/scheduled.json"
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "yarn lint  --fix",
-      "prettier --write --single-quote --trailing-comma es5",
-      "git add"
-    ]
-  },
-  "nyc": {
-    "check-coverage": true,
-    "lines": 0,
-    "statements": 0,
-    "functions": 0,
-    "branches": 0,
-    "sourceMap": false,
-    "instrument": false,
-    "require": [
-      "babel-register"
-    ],
-    "include": [
-      "src/**/*.js"
-    ],
-    "exclude": [
-      "src/**/*.spec.js",
-      "src/**/index.js",
-      "src/logger.js"
-    ],
-    "reporter": [
-      "text",
-      "html",
-      "teamcity"
-    ],
-    "cache": true,
-    "all": true,
-    "report-dir": "./reports/coverage"
-  },
-  "dependencies": {
-    "babel-runtime": "6.26.0",
-    "express": "4.16.3",
-    "serverless-http": "1.5.5",
-    "source-map-support": "0.5.4",
-    "winston": "2.4.1"
-  },
-  "devDependencies": {
-    "aws-sdk": "2.222.1",
-    "babel-core": "6.26.0",
-    "babel-loader": "7.1.4",
-    "babel-plugin-istanbul": "4.1.6",
-    "babel-plugin-source-map-support": "2.0.1",
-    "babel-plugin-transform-runtime": "6.23.0",
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-3": "6.24.1",
-    "chai": "4.1.2",
-    "coveralls": "3.0.0",
-    "cross-env": "5.1.4",
-    "eslint": "4.19.1",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-import": "2.7.0",
-    "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.4.0",
-    "husky": "0.14.3",
-    "lint-staged": "7.0.4",
-    "mocha": "5.0.5",
-    "mocha-lcov-reporter": "1.3.0",
-    "nyc": "11.6.0",
-    "prettier": "1.11.1",
-    "rimraf": "2.6.2",
-    "serverless": "1.26.1",
-    "serverless-domain-manager": "2.3.6",
-    "serverless-offline": "3.20.1",
-    "serverless-plugin-aws-alerts": "1.2.4",
-    "serverless-webpack": "5.1.1",
-    "webpack": "4.5.0",
-    "webpack-node-externals": "1.7.2"
-  }
+    "name": "serverless-nodejs-starter",
+    "version": "1.0.0",
+    "description": "starter for nodejs serverless",
+    "main": "index.js",
+    "repository": "https://github.com/shavo007/serverless-nodejs-starter.git",
+    "author": "shane lee <shanelee007@gmail.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">=8"
+    },
+    "private": true,
+    "scripts": {
+        "bootstrap": "./scripts/bootstrap.sh",
+        "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+        "deploy:dev": "sls deploy --stage dev",
+        "deploy:production": "sls deploy --stage production",
+        "deploy:stage": "sls deploy --stage stage",
+        "lint": "eslint ./src",
+        "precommit": "lint-staged",
+        "serve": "cross-env SLS_DEBUG=* serverless offline start --stage dev",
+        "metrics": "sls metrics --stage dev",
+        "tail:hello": "sls logs --function hello --tail",
+        "tail:app": "sls logs --function app --tail",
+        "test:unit": "eslint --fix src && rimraf reports && cross-env NODE_ENV=test nyc mocha",
+        "coverage": "nyc report --reporter=text-lcov | coveralls",
+        "watch:hello": "serverless invoke local --watch --function hello --path fixtures/event.json",
+        "watch:warm": "serverless invoke local --watch --function hello --path fixtures/scheduled.json"
+    },
+    "lint-staged": {
+        "src/**/*.js": [
+            "yarn lint  --fix",
+            "prettier --write --single-quote --trailing-comma es5",
+            "git add"
+        ]
+    },
+    "nyc": {
+        "check-coverage": true,
+        "lines": 0,
+        "statements": 0,
+        "functions": 0,
+        "branches": 0,
+        "sourceMap": false,
+        "instrument": false,
+        "require": [
+            "babel-register"
+        ],
+        "include": [
+            "src/**/*.js"
+        ],
+        "exclude": [
+            "src/**/*.spec.js",
+            "src/**/index.js",
+            "src/logger.js"
+        ],
+        "reporter": [
+            "text",
+            "html",
+            "teamcity"
+        ],
+        "cache": true,
+        "all": true,
+        "report-dir": "./reports/coverage"
+    },
+    "dependencies": {
+        "babel-runtime": "6.26.0",
+        "express": "4.16.3",
+        "serverless-http": "1.5.5",
+        "source-map-support": "0.5.4",
+        "winston": "2.4.1"
+    },
+    "devDependencies": {
+        "aws-sdk": "2.222.1",
+        "babel-core": "6.26.0",
+        "babel-loader": "7.1.4",
+        "babel-plugin-istanbul": "4.1.6",
+        "babel-plugin-source-map-support": "2.0.1",
+        "babel-plugin-transform-runtime": "6.23.0",
+        "babel-preset-env": "1.6.1",
+        "babel-preset-stage-3": "6.24.1",
+        "chai": "4.1.2",
+        "coveralls": "3.0.0",
+        "cross-env": "5.1.4",
+        "eslint": "4.19.1",
+        "eslint-config-airbnb": "16.1.0",
+        "eslint-config-prettier": "2.9.0",
+        "eslint-plugin-import": "2.7.0",
+        "eslint-plugin-jsx-a11y": "6.0.2",
+        "eslint-plugin-react": "7.4.0",
+        "husky": "0.14.3",
+        "lint-staged": "7.0.4",
+        "mocha": "5.0.5",
+        "mocha-lcov-reporter": "1.3.0",
+        "nyc": "11.6.0",
+        "prettier": "1.11.1",
+        "rimraf": "2.6.2",
+        "serverless": "1.26.1",
+        "serverless-domain-manager": "2.3.6",
+        "serverless-offline": "3.20.1",
+        "serverless-plugin-aws-alerts": "1.2.4",
+        "serverless-webpack": "5.1.1",
+        "webpack": "4.5.0",
+        "webpack-node-externals": "1.7.2"
+    }
 }
