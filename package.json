@@ -92,7 +92,7 @@
         "mocha": "5.0.5",
         "mocha-lcov-reporter": "1.3.0",
         "nyc": "11.6.0",
-        "prettier": "1.11.1",
+        "prettier": "1.12.0",
         "rimraf": "2.6.2",
         "serverless": "1.26.1",
         "serverless-domain-manager": "2.3.6",
