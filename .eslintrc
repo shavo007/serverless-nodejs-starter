@@ -10,6 +10,7 @@
     "afterAll",
     "beforeAll",
     "beforeEach",
+    "afterEach",
     "describe",
     "fit",
     "it",
