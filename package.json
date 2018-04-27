@@ -71,7 +71,7 @@
     },
     "devDependencies": {
         "aws-sdk": "2.226.1",
-        "babel-core": "6.26.2",
+        "babel-core": "6.26.3",
         "babel-loader": "7.1.4",
         "babel-plugin-istanbul": "4.1.6",
         "babel-plugin-source-map-support": "2.0.1",
