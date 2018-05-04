@@ -94,7 +94,7 @@
         "nyc": "11.7.1",
         "prettier": "1.12.1",
         "rimraf": "2.6.2",
-        "serverless": "1.27.0",
+        "serverless": "1.27.1",
         "serverless-domain-manager": "2.3.6",
         "serverless-offline": "3.20.3",
         "serverless-plugin-aws-alerts": "1.2.4",
