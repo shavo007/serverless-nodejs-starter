@@ -33,8 +33,8 @@
 	},
 	"lint-staged": {
 		"src/**/*.js": [
-			"yarn lint  --fix",
 			"prettier --write --single-quote --no-semi",
+			"yarn lint  --fix",
 			"git add"
 		]
 	},
