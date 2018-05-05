@@ -18,9 +18,9 @@ const hello = async (event, context, callback) => {
     body: JSON.stringify({
       message: ` ${helloWorld.hello()} ${await message({
         time: 1,
-        copy: 'Your function executed successfully!',
-      })}`,
-    }),
+        copy: 'Your function executed successfully!'
+      })}`
+    })
   }
 
   callback(null, response)

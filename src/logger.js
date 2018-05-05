@@ -9,10 +9,10 @@ const logger = new winston.Logger({
     new winston.transports.Console({
       handleExceptions,
       humanReadableUnhandledException: handleExceptions,
-      level: 'debug',
-    }),
+      level: 'debug'
+    })
   ],
-  exitOnError: false,
+  exitOnError: false
 })
 
 export default logger
