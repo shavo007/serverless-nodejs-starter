@@ -1,11 +1,11 @@
 class HelloWorld {
   constructor(name) {
-    this.name = name;
+    this.name = name
   }
 
   hello() {
-    return `Hello ${this.name}`;
+    return `Hello ${this.name}`
   }
 }
 
-export default HelloWorld;
+export default HelloWorld

@@ -1,7 +1,7 @@
-import winston from 'winston';
+import winston from 'winston'
 
-winston.level = process.env.LOG_LEVEL || 'info';
-const handleExceptions = process.env.NODE_ENV !== 'dev';
+winston.level = process.env.LOG_LEVEL || 'info'
+const handleExceptions = process.env.NODE_ENV !== 'dev'
 
 const logger = new winston.Logger({
   level: winston.level,
@@ -13,6 +13,6 @@ const logger = new winston.Logger({
     }),
   ],
   exitOnError: false,
-});
+})
 
-export default logger;
+export default logger
