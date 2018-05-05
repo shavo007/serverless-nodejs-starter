@@ -30,6 +30,13 @@ Once installed, you can create and deploy functions with the latest ES6 features
 
 ## Install
 
+* Yarn
+
+1. `curl -o- -L https://yarnpkg.com/install.sh | bash`
+2. `yarn bash completion` - https://github.com/dsifford/yarn-completion
+
+
+
 ```bash
 # If you don't already have the serverless cli installed, do that
 yarn global add serverless
