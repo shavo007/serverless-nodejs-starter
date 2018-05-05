@@ -32,11 +32,7 @@
 			"serverless invoke local --watch --function hello --path fixtures/scheduled.json"
 	},
 	"lint-staged": {
-		"src/**/*.js": [
-			"prettier --write --single-quote --no-semi",
-			"yarn lint  --fix",
-			"git add"
-		]
+		"src/**/*.js": ["yarn lint  --fix", "git add"]
 	},
 	"nyc": {
 		"check-coverage": true,
