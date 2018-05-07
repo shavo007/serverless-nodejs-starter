@@ -1629,7 +1629,7 @@ commander@~2.8.1:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commitizen@^2.9.6:
+commitizen@2.9.6:
   version "2.9.6"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-2.9.6.tgz#c0d00535ef264da7f63737edfda4228983fa2291"
   dependencies:
@@ -1917,7 +1917,7 @@ cz-conventional-changelog@1.2.0:
     right-pad "^1.0.1"
     word-wrap "^1.0.3"
 
-cz-conventional-changelog@^2.1.0:
+cz-conventional-changelog@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cz-conventional-changelog/-/cz-conventional-changelog-2.1.0.tgz#2f4bc7390e3244e4df293e6ba351e4c740a7c764"
   dependencies:
