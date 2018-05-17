@@ -92,7 +92,7 @@
         "rimraf": "2.6.2",
         "serverless": "1.27.2",
         "serverless-domain-manager": "2.3.6",
-        "serverless-offline": "3.22.0",
+        "serverless-offline": "3.23.0",
         "serverless-plugin-aws-alerts": "1.2.4",
         "serverless-webpack": "5.1.5",
         "sinon": "5.0.7",
