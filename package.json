@@ -64,7 +64,7 @@
         "winston": "3.0.0"
     },
     "devDependencies": {
-        "aws-sdk": "2.279.1",
+        "aws-sdk": "2.282.1",
         "babel-core": "6.26.3",
         "babel-loader": "7.1.5",
         "babel-plugin-istanbul": "4.1.6",
