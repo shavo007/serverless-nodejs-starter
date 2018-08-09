@@ -60,7 +60,7 @@
         "babel-runtime": "6.26.0",
         "express": "4.16.3",
         "serverless-http": "1.6.0",
-        "source-map-support": "0.5.7",
+        "source-map-support": "0.5.8",
         "winston": "3.0.0"
     },
     "devDependencies": {
