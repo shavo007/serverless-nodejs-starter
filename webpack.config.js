@@ -21,11 +21,16 @@ module.exports = {
   // Run babel on all .js files and skip those in node_modules
   module: {
     rules: [
-      {
+        {
         test: /\.js$/,
-        loader: "babel-loader",
         include: __dirname,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
       }
     ]
   }
