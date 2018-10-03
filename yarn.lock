@@ -6460,9 +6460,9 @@ serverless-http@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.6.0.tgz#bc94c2c39dcf43b47a190d982b2bc43be09d3748"
 
-serverless-offline@3.25.17:
-  version "3.25.17"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.25.17.tgz#8814c250ba89af37b64b1ed06d411110ce176be3"
+serverless-offline@3.26.0:
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.26.0.tgz#b9d9ace4ebe9a27123fe3f484696b842d9511a4e"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/register" "^7.0.0"
