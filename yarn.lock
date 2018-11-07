@@ -6443,9 +6443,9 @@ serverless-http@1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.8.0.tgz#b91736c31c8dc3aa1c0832a89e9852f37206125c"
 
-serverless-offline@3.31.0:
-  version "3.31.0"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.31.0.tgz#0ee5885df968c4be415cf10d229370fd6cd5c908"
+serverless-offline@3.31.1:
+  version "3.31.1"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.31.1.tgz#45398ff2961b1a7f8bc54569e7a833bd8ea01596"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/register" "^7.0.0"
