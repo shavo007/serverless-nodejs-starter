@@ -6480,9 +6480,9 @@ serverless-webpack@5.2.0:
     semver "^5.5.0"
     ts-node "^3.2.0"
 
-serverless@1.32.0:
-  version "1.32.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.32.0.tgz#84bd7b56dfa14edea0bf95a685e9013dc9ff5ab8"
+serverless@1.33.1:
+  version "1.33.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.33.1.tgz#94436952214f47237244be66b683fff0e77470e3"
   dependencies:
     "@serverless/platform-sdk" "^0.3.0"
     archiver "^1.1.0"
@@ -6516,6 +6516,7 @@ serverless@1.32.0:
     semver "^5.0.3"
     semver-regex "^1.0.0"
     tabtab "^2.2.2"
+    untildify "^3.0.3"
     update-notifier "^2.2.0"
     uuid "^2.0.2"
     write-file-atomic "^2.1.0"
@@ -7318,6 +7319,10 @@ unset-value@^1.0.0:
   dependencies:
     has-value "^0.3.1"
     isobject "^3.0.0"
+
+untildify@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/untildify/-/untildify-3.0.3.tgz#1e7b42b140bcfd922b22e70ca1265bfe3634c7c9"
 
 unzip-response@^2.0.1:
   version "2.0.1"
