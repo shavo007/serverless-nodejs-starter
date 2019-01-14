@@ -6512,9 +6512,9 @@ serverless-http@1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.8.0.tgz#b91736c31c8dc3aa1c0832a89e9852f37206125c"
 
-serverless-offline@3.32.2:
-  version "3.32.2"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.32.2.tgz#82b13848392398141bcea368adb3cde686018c60"
+serverless-offline@3.33.0:
+  version "3.33.0"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.33.0.tgz#bd2cd8eaebec467e8691f597053c3d9ee9844a62"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/register" "^7.0.0"
@@ -6526,7 +6526,6 @@ serverless-offline@3.32.2:
     js-string-escape "^1.0.1"
     jsonpath-plus "^0.16.0"
     jsonwebtoken "^8.3.0"
-    lodash "^4.17.10"
     uuid "^3.3.2"
     velocityjs "^1.1.2"
 
