@@ -6508,9 +6508,9 @@ serverless-domain-manager@2.6.11:
     aws-sdk "^2.177.0"
     chalk "^2.0.1"
 
-serverless-http@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.8.0.tgz#b91736c31c8dc3aa1c0832a89e9852f37206125c"
+serverless-http@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.9.0.tgz#2326aa49020d303f374494504325b4c40bd7db41"
 
 serverless-offline@3.33.0:
   version "3.33.0"
