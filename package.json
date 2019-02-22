@@ -84,7 +84,7 @@
     "babel-plugin-source-map-support": "2.0.1",
     "chai": "4.2.0",
     "commitizen": "2.10.1",
-    "coveralls": "3.0.2",
+    "coveralls": "3.0.3",
     "cross-env": "5.2.0",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "4.19.1",
