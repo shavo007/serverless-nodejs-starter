@@ -1,4 +1,0 @@
---compilers js:@babel/register
---reporter nyan
---require test/mochaSetup
-./src/**/*.spec.js
