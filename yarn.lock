@@ -6926,10 +6926,10 @@ serverless-http@1.9.1:
   resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.9.1.tgz#16637159972f65bfae99ffa3a037abcb31f702c7"
   integrity sha512-vq6rK/vwAMcUqScc+B6QIaYZ2OhEx4M8ObqWNek8eDJRvxpKsMQllnDywe+AGAMFVUOX9KxfB2a6XzXLTsRGYQ==
 
-serverless-offline@4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-4.7.0.tgz#f5d789625c004f5aa2d83fd4197e78b0cff59539"
-  integrity sha512-rIYPOK9dUE8s8HwHV0BfjvqGmu+0GTjc5zgIlF86a4fiXEN1Te0vbFDRoeWYYU6iCS4U8ZDU4mpuzrRmUhjhDA==
+serverless-offline@4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-4.7.1.tgz#572a2ac15bd7327cc9050652758983fae7af2057"
+  integrity sha512-gGe5dqWivghl1PxLkE0CbCmYHKtLDE4INkEIh1lGKc/l4qcaTkdRiBmegvJ0JKTxE+HI7vNNnv0DwY5egC4ObA==
   dependencies:
     boom "^7.3.0"
     cryptiles "^4.1.2"
