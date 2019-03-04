@@ -108,7 +108,7 @@
     "serverless-offline": "4.7.1",
     "serverless-plugin-aws-alerts": "1.2.4",
     "serverless-webpack": "5.2.0",
-    "sinon": "7.2.6",
+    "sinon": "7.2.7",
     "sinon-chai": "3.3.0",
     "webpack": "4.29.6",
     "webpack-node-externals": "1.7.2"
