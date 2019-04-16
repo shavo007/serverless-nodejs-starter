@@ -854,6 +854,11 @@
   resolved "https://registry.yarnpkg.com/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz#8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
   integrity sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==
 
+"@types/aws-lambda@^8.10.19":
+  version "8.10.24"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.24.tgz#89a20cd91957322e26dbfea7f651b970460c8c0c"
+  integrity sha512-9F70bcb2oBGZUZCyisE1Ap3vwgt04uiSmr4s9mhQf89vBrttgraBs2Rc8l9YrKiemCndCH7wxnYNWk5qEuv6rA==
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -7225,10 +7230,12 @@ serverless-domain-manager@2.6.13:
     aws-sdk "^2.177.0"
     chalk "^2.0.1"
 
-serverless-http@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.9.1.tgz#16637159972f65bfae99ffa3a037abcb31f702c7"
-  integrity sha512-vq6rK/vwAMcUqScc+B6QIaYZ2OhEx4M8ObqWNek8eDJRvxpKsMQllnDywe+AGAMFVUOX9KxfB2a6XzXLTsRGYQ==
+serverless-http@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.10.0.tgz#6bebde07473276495c0b31fbdb5c800e2e0e35fe"
+  integrity sha512-m8CGMY6Gf1FMossOPDmj4wBHRY80WBzrWKfNlNvoGvXfA23m/N5rmLq46G4HwQes6WGdC+x+tWsZEYGxkvwx9A==
+  optionalDependencies:
+    "@types/aws-lambda" "^8.10.19"
 
 serverless-offline@4.9.4:
   version "4.9.4"
