@@ -7230,10 +7230,10 @@ serverless-domain-manager@2.6.13:
     aws-sdk "^2.177.0"
     chalk "^2.0.1"
 
-serverless-http@1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.10.0.tgz#6bebde07473276495c0b31fbdb5c800e2e0e35fe"
-  integrity sha512-m8CGMY6Gf1FMossOPDmj4wBHRY80WBzrWKfNlNvoGvXfA23m/N5rmLq46G4HwQes6WGdC+x+tWsZEYGxkvwx9A==
+serverless-http@1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-1.10.1.tgz#e604fbef55ecd991fdbb7d1130b4d34dad8a0428"
+  integrity sha512-6DEaM8izBg05rP4JfDWVJmzpTbXcVa1lGLOfj7ODtjOJ98hb1gbYI8m/91XERUUNUvP1KeBzxtiJiTU+v7Jgzg==
   optionalDependencies:
     "@types/aws-lambda" "^8.10.19"
 
