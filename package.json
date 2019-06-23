@@ -79,7 +79,7 @@
     "@babel/plugin-transform-runtime": "7.4.4",
     "@babel/preset-env": "7.4.5",
     "@babel/register": "7.4.4",
-    "aws-sdk": "2.476.0",
+    "aws-sdk": "2.480.0",
     "babel-loader": "8.0.6",
     "babel-plugin-istanbul": "5.1.4",
     "babel-plugin-source-map-support": "2.0.1",
