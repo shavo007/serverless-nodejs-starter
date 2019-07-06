@@ -68,7 +68,7 @@
     "report-dir": "./reports/coverage"
   },
   "dependencies": {
-    "@babel/runtime": "7.5.0",
+    "@babel/runtime": "7.5.1",
     "express": "4.17.1",
     "serverless-http": "1.10.1",
     "source-map-support": "0.5.12",
