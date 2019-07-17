@@ -84,7 +84,7 @@
     "babel-plugin-istanbul": "5.1.4",
     "babel-plugin-source-map-support": "2.1.1",
     "chai": "4.2.0",
-    "commitizen": "3.1.1",
+    "commitizen": "3.1.2",
     "coveralls": "3.0.5",
     "cross-env": "5.2.0",
     "cz-conventional-changelog": "2.1.0",
