@@ -5714,7 +5714,7 @@ lodash@4.17.14, lodash@4.17.x:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
   integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
-lodash@^4.16.6, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.8.0:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.8.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -7805,12 +7805,12 @@ serverless-offline@4.10.6:
     trim-newlines "^2.0.0"
     velocityjs "^1.1.3"
 
-serverless-plugin-aws-alerts@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-aws-alerts/-/serverless-plugin-aws-alerts-1.2.4.tgz#df0958acf128298aa069dd38e134b0104c3d2f44"
-  integrity sha1-3wlYrPEoKYqgad044TSwEEw9L0Q=
+serverless-plugin-aws-alerts@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-aws-alerts/-/serverless-plugin-aws-alerts-1.3.1.tgz#fd4405ab4326a8e73c8ac8fa18d063e87cec290d"
+  integrity sha512-UfBQA/hl7f7qJe+qeiige0cYm3hCIaSHr/L6iSJiZtcQEqEGoygL0trDCVCmc+JUI20kftBOFDWR662fMB2dXA==
   dependencies:
-    lodash "^4.16.6"
+    lodash "^4.17.10"
 
 serverless-webpack@5.3.1:
   version "5.3.1"
