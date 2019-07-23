@@ -7797,10 +7797,10 @@ serverless-offline@4.10.6:
     trim-newlines "^2.0.0"
     velocityjs "^1.1.3"
 
-serverless-plugin-aws-alerts@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-aws-alerts/-/serverless-plugin-aws-alerts-1.3.1.tgz#fd4405ab4326a8e73c8ac8fa18d063e87cec290d"
-  integrity sha512-UfBQA/hl7f7qJe+qeiige0cYm3hCIaSHr/L6iSJiZtcQEqEGoygL0trDCVCmc+JUI20kftBOFDWR662fMB2dXA==
+serverless-plugin-aws-alerts@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-aws-alerts/-/serverless-plugin-aws-alerts-1.4.0.tgz#648b7a733c9d5e97e56fa46540091d81feba738e"
+  integrity sha512-4ChkFVVi3X4NeqgdxAhaVha8LnXrH8kadMm5iV1TMyOr/zNdjo9NoRCLnHkspODO4f2uqwlEiMuh9yUrT6s7PA==
   dependencies:
     lodash "^4.17.10"
 
