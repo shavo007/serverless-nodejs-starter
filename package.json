@@ -68,17 +68,17 @@
     "report-dir": "./reports/coverage"
   },
   "dependencies": {
-    "@babel/runtime": "7.7.2",
+    "@babel/runtime": "7.7.4",
     "express": "4.17.1",
     "serverless-http": "1.10.1",
     "source-map-support": "0.5.16",
     "winston": "3.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.7.2",
-    "@babel/plugin-transform-runtime": "7.6.2",
-    "@babel/preset-env": "7.7.1",
-    "@babel/register": "7.7.0",
+    "@babel/core": "7.7.4",
+    "@babel/plugin-transform-runtime": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/register": "7.7.4",
     "aws-sdk": "2.573.0",
     "babel-loader": "8.0.6",
     "babel-plugin-istanbul": "5.2.0",
