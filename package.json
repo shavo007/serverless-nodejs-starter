@@ -71,7 +71,7 @@
     "@babel/runtime": "7.9.2",
     "express": "4.17.1",
     "serverless-http": "1.10.1",
-    "source-map-support": "0.5.18",
+    "source-map-support": "0.5.19",
     "winston": "3.2.1"
   },
   "devDependencies": {
