@@ -68,16 +68,16 @@
     "report-dir": "./reports/coverage"
   },
   "dependencies": {
-    "@babel/runtime": "7.10.1",
+    "@babel/runtime": "7.10.2",
     "express": "4.17.1",
     "serverless-http": "1.10.1",
     "source-map-support": "0.5.19",
     "winston": "3.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.1",
+    "@babel/core": "7.10.2",
     "@babel/plugin-transform-runtime": "7.10.1",
-    "@babel/preset-env": "7.10.1",
+    "@babel/preset-env": "7.10.2",
     "@babel/register": "7.10.1",
     "aws-sdk": "2.683.0",
     "babel-loader": "8.1.0",
