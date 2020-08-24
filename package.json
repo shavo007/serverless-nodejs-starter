@@ -107,7 +107,7 @@
     "serverless-domain-manager": "2.6.13",
     "serverless-offline": "4.10.6",
     "serverless-plugin-aws-alerts": "1.6.1",
-    "serverless-webpack": "5.3.3",
+    "serverless-webpack": "5.3.4",
     "sinon": "7.5.0",
     "sinon-chai": "3.5.0",
     "webpack": "4.44.1",
