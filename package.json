@@ -75,9 +75,9 @@
     "winston": "3.3.3"
   },
   "devDependencies": {
-    "@babel/core": "7.14.8",
-    "@babel/plugin-transform-runtime": "7.14.5",
-    "@babel/preset-env": "7.14.9",
+    "@babel/core": "7.15.0",
+    "@babel/plugin-transform-runtime": "7.15.0",
+    "@babel/preset-env": "7.15.0",
     "@babel/register": "7.14.5",
     "aws-sdk": "2.958.0",
     "babel-loader": "8.2.2",
