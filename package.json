@@ -68,7 +68,7 @@
     "report-dir": "./reports/coverage"
   },
   "dependencies": {
-    "@babel/runtime": "7.14.8",
+    "@babel/runtime": "7.15.3",
     "express": "4.17.1",
     "serverless-http": "1.10.1",
     "source-map-support": "0.5.19",
@@ -78,7 +78,7 @@
     "@babel/core": "7.15.0",
     "@babel/plugin-transform-runtime": "7.15.0",
     "@babel/preset-env": "7.15.0",
-    "@babel/register": "7.14.5",
+    "@babel/register": "7.15.3",
     "aws-sdk": "2.963.0",
     "babel-loader": "8.2.2",
     "babel-plugin-istanbul": "5.2.0",
