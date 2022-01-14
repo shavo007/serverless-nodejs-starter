@@ -76,9 +76,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.16.7",
-    "@babel/plugin-transform-runtime": "7.16.7",
-    "@babel/preset-env": "7.16.7",
-    "@babel/register": "7.16.7",
+    "@babel/plugin-transform-runtime": "7.16.8",
+    "@babel/preset-env": "7.16.8",
+    "@babel/register": "7.16.9",
     "aws-sdk": "2.1053.0",
     "babel-loader": "8.2.3",
     "babel-plugin-istanbul": "5.2.0",
