@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.16.7",
-    "express": "4.17.2",
+    "express": "4.17.3",
     "serverless-http": "1.10.1",
     "source-map-support": "0.5.21",
     "winston": "3.5.0"
