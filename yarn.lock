@@ -2578,13 +2578,13 @@ archiver@^4.0.1:
     tar-stream "^2.1.2"
     zip-stream "^3.0.1"
 
-archiver@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/archiver/-/archiver-5.3.0.tgz#dd3e097624481741df626267564f7dd8640a45ba"
-  integrity sha512-iUw+oDwK0fgNpvveEsdQ0Ase6IIKztBJU2U0E9MzszMfmVVUyv1QJhS2ITW9ZCqx8dktAxVAjWWkKehuZE8OPg==
+archiver@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/archiver/-/archiver-5.3.1.tgz#21e92811d6f09ecfce649fbefefe8c79e57cbbb6"
+  integrity sha512-8KyabkmbYrH+9ibcTScQ1xCJC/CGcugdVIwB+53f5sZziXgwUh3iXlAlANMxcZyDEfTHMe6+Z5FofV8nopXP7w==
   dependencies:
     archiver-utils "^2.1.0"
-    async "^3.2.0"
+    async "^3.2.3"
     buffer-crc32 "^0.2.1"
     readable-stream "^3.6.0"
     readdir-glob "^1.0.0"
@@ -2755,11 +2755,6 @@ async@^2.6.3:
   integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
   dependencies:
     lodash "^4.17.14"
-
-async@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
-  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
 
 async@^3.2.3:
   version "3.2.3"
@@ -10324,7 +10319,7 @@ semver@^7.3.2:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
   integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
-semver@^7.3.6:
+semver@^7.3.7:
   version "7.3.7"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.7.tgz#12c5b649afdbf9049707796e22a4028814ce523f"
   integrity sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==
@@ -10408,18 +10403,18 @@ serverless-plugin-aws-alerts@1.7.4:
     lodash.union "^4.6.0"
     lodash.upperfirst "^4.3.1"
 
-serverless-webpack@5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-5.7.0.tgz#ba90c7db9c5e8fdfa73dd33c7ae544fbb4298da0"
-  integrity sha512-Z19JKkMm8SsQuy8S2Pd8DM79B1olEX4sAcHtUWniyrHBSnjadLGOoFUr5bjHg8CRhRQCqWafyeJSC1ndG9o4ug==
+serverless-webpack@5.7.1:
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-5.7.1.tgz#6420b218d371647c236a747153c004bc1e14913a"
+  integrity sha512-uyDtyLSR81lNDRWC8yU2hB9eNdfICJ9d5OnSuXCJ+UF5A+KhMkDa0oXVtyKfa5uT+kqCgF9kUW4GUJBav8vsKA==
   dependencies:
-    archiver "^5.3.0"
+    archiver "^5.3.1"
     bluebird "^3.7.2"
     fs-extra "^9.1.0"
     glob "^7.2.0"
     is-builtin-module "^3.1.0"
     lodash "^4.17.21"
-    semver "^7.3.6"
+    semver "^7.3.7"
   optionalDependencies:
     ts-node ">= 8.3.0"
 
