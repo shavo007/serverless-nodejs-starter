@@ -104,7 +104,7 @@
     "prettier-eslint": "8.8.2",
     "rimraf": "2.7.1",
     "serverless": "1.83.3",
-    "serverless-domain-manager": "2.6.13",
+    "serverless-domain-manager": "6.4.4",
     "serverless-offline": "4.10.6",
     "serverless-plugin-aws-alerts": "1.7.5",
     "serverless-webpack": "5.9.1",
