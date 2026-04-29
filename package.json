@@ -80,7 +80,7 @@
     "@babel/preset-env": "7.29.2",
     "@babel/register": "7.28.6",
     "aws-sdk": "2.1125.0",
-    "babel-loader": "8.4.1",
+    "babel-loader": "10.1.1",
     "babel-plugin-istanbul": "5.2.0",
     "babel-plugin-source-map-support": "2.2.0",
     "chai": "4.5.0",
